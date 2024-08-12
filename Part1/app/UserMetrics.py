@@ -1,4 +1,3 @@
-from datetime import datetime
 from pydantic import BaseModel
 from typing import Optional
 
@@ -11,4 +10,4 @@ class UserMetrics(BaseModel):
     microphone_used: Optional[bool]
     speaker_used: Optional[bool]
     voice_sentiment: Optional[float]
-    timestamp: datetime
+    timestamp: str
